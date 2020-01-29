@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Yuk Wa Wong</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body,
+        h1 {
+            padding: 0;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #example {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(5, 5, 5, 0.6), rgba(0, 0, 0, 0)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url("https://m.media-amazon.com/images/I/21sTBN6+unL._SR500,500_.jpg");
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        #wrapper {
+            text-align: center;
+        }
+
+        .glitch {
+            position: relative;
+            color: white;
+            font-size: 6em;
+            letter-spacing: 1em;
+            animation: glitch-skew 0.5s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            left: -2px;
+            text-shadow: -5px 0 #00fff9, 5px 5px #ff00c1;
+            animation: glitch-anim2 1s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim {
+            0% {
+                clip: rect(30px, 9999px, 42px, 0);
+                transform: skew(0.85deg);
+            }
+
+            5% {
+                clip: rect(59px, 9999px, 21px, 0);
+                transform: skew(0.34deg);
+            }
+
+            10% {
+                clip: rect(99px, 9999px, 15px, 0);
+                transform: skew(0.01deg);
+            }
+
+            15% {
+                clip: rect(25px, 9999px, 61px, 0);
+                transform: skew(0.97deg);
+            }
+
+            20% {
+                clip: rect(35px, 9999px, 42px, 0);
+                transform: skew(0.94deg);
+            }
+
+            25% {
+                clip: rect(39px, 9999px, 62px, 0);
+                transform: skew(0.31deg);
+            }
+
+            30% {
+                clip: rect(62px, 9999px, 55px, 0);
+                transform: skew(0.9deg);
+            }
+
+            35% {
+                clip: rect(36px, 9999px, 31px, 0);
+                transform: skew(0.13deg);
+            }
+
+            40% {
+                clip: rect(27px, 9999px, 26px, 0);
+                transform: skew(0.01deg);
+            }
+
+            45% {
+                clip: rect(55px, 9999px, 9px, 0);
+                transform: skew(0.5deg);
+            }
+
+            50% {
+                clip: rect(69px, 9999px, 73px, 0);
+                transform: skew(0.85deg);
+            }
+
+            55% {
+                clip: rect(53px, 9999px, 89px, 0);
+                transform: skew(0.15deg);
+            }
+
+            60% {
+                clip: rect(20px, 9999px, 28px, 0);
+                transform: skew(0.62deg);
+            }
+
+            65% {
+                clip: rect(81px, 9999px, 28px, 0);
+                transform: skew(0.1deg);
+            }
+
+            70% {
+                clip: rect(54px, 9999px, 93px, 0);
+                transform: skew(0.3deg);
+            }
+
+            75% {
+                clip: rect(22px, 9999px, 6px, 0);
+                transform: skew(0.84deg);
+            }
+
+            80% {
+                clip: rect(23px, 9999px, 5px, 0);
+                transform: skew(0.55deg);
+            }
+
+            85% {
+                clip: rect(24px, 9999px, 76px, 0);
+                transform: skew(0.68deg);
+            }
+
+            90% {
+                clip: rect(3px, 9999px, 29px, 0);
+                transform: skew(0.48deg);
+            }
+
+            95% {
+                clip: rect(43px, 9999px, 95px, 0);
+                transform: skew(0.37deg);
+            }
+
+            100% {
+                clip: rect(58px, 9999px, 66px, 0);
+                transform: skew(0.05deg);
+            }
+        }
+
+        @keyframes glitch-anim2 {
+            0% {
+                clip: rect(66px, 9999px, 28px, 0);
+                transform: skew(0.12deg);
+            }
+
+            5% {
+                clip: rect(85px, 9999px, 40px, 0);
+                transform: skew(0.7deg);
+            }
+
+            10% {
+                clip: rect(14px, 9999px, 33px, 0);
+                transform: skew(0.81deg);
+            }
+
+            15% {
+                clip: rect(48px, 9999px, 76px, 0);
+                transform: skew(0.57deg);
+            }
+
+            20% {
+                clip: rect(77px, 9999px, 16px, 0);
+                transform: skew(0.4deg);
+            }
+
+            25% {
+                clip: rect(15px, 9999px, 43px, 0);
+                transform: skew(0.27deg);
+            }
+
+            30% {
+                clip: rect(33px, 9999px, 11px, 0);
+                transform: skew(0.84deg);
+            }
+
+            35% {
+                clip: rect(50px, 9999px, 51px, 0);
+                transform: skew(0.16deg);
+            }
+
+            40% {
+                clip: rect(52px, 9999px, 11px, 0);
+                transform: skew(0.21deg);
+            }
+
+            45% {
+                clip: rect(39px, 9999px, 58px, 0);
+                transform: skew(0.98deg);
+            }
+
+            50% {
+                clip: rect(88px, 9999px, 42px, 0);
+                transform: skew(0.42deg);
+            }
+
+            55% {
+                clip: rect(98px, 9999px, 11px, 0);
+                transform: skew(0.51deg);
+            }
+
+            60% {
+                clip: rect(73px, 9999px, 73px, 0);
+                transform: skew(0.81deg);
+            }
+
+            65% {
+                clip: rect(82px, 9999px, 59px, 0);
+                transform: skew(1deg);
+            }
+
+            70% {
+                clip: rect(64px, 9999px, 84px, 0);
+                transform: skew(0.94deg);
+            }
+
+            75% {
+                clip: rect(41px, 9999px, 44px, 0);
+                transform: skew(0.38deg);
+            }
+
+            80% {
+                clip: rect(23px, 9999px, 35px, 0);
+                transform: skew(0.54deg);
+            }
+
+            85% {
+                clip: rect(20px, 9999px, 100px, 0);
+                transform: skew(0.76deg);
+            }
+
+            90% {
+                clip: rect(9px, 9999px, 96px, 0);
+                transform: skew(0.64deg);
+            }
+
+            95% {
+                clip: rect(29px, 9999px, 82px, 0);
+                transform: skew(0.47deg);
+            }
+
+            100% {
+                clip: rect(15px, 9999px, 94px, 0);
+                transform: skew(0.76deg);
+            }
+        }
+
+        @keyframes glitch-skew {
+            0% {
+                transform: skew(2deg);
+            }
+
+            10% {
+                transform: skew(4deg);
+            }
+
+            20% {
+                transform: skew(4deg);
+            }
+
+            30% {
+                transform: skew(-2deg);
+            }
+
+            40% {
+                transform: skew(4deg);
+            }
+
+            50% {
+                transform: skew(2deg);
+            }
+
+            60% {
+                transform: skew(-3deg);
+            }
+
+            70% {
+                transform: skew(-1deg);
+            }
+
+            80% {
+                transform: skew(-3deg);
+            }
+
+            90% {
+                transform: skew(-2deg);
+            }
+
+            100% {
+                transform: skew(-2deg);
+            }
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">ABOUT ME</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    SKILLS
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section31">BLOOMBERG TERMINAL</a>
+                    <a class="dropdown-item" href="#section32">STOCKS</a>
+                    <a class="dropdown-item" href="#section32">CODING</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Section 4
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section41">Link 1</a>
+                    <a class="dropdown-item" href="#section42">Link 2</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="section1" class="container-fluid bg-1" style="padding-top:70px;padding-bottom:70px">
+        <div id="example">
+            <div id="wrapper">
+                <h1 class="glitch" data-text="JESSICA">YUK WA</h1>
+                <h1 class="glitch">WONG</h1>
+            </div>
+        </div>
+    </div>
+    <div id="section2" class="container-fluid bg-2" style="padding-top:70px;padding-bottom:70px">
+        <h1>ABOUT ME</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section31" class="container-fluid bg-3" style="padding-top:70px;padding-bottom:70px">
+        <h1>BLOOMBERG TERMINAL</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section32" class="container-fluid bg-4" style="padding-top:70px;padding-bottom:70px">
+        <h1>STOCKS</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section33" class="container-fluid bg-4" style="padding-top:70px;padding-bottom:70px">
+        <h1>CODING</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section41" class="container-fluid bg-5" style="padding-top:70px;padding-bottom:70px">
+        <h1>Section 4 Submenu 1</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section42" class="container-fluid bg-6" style="padding-top:70px;padding-bottom:70px">
+        <h1>Section 4 Submenu 2</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+</body>
+
+</html>

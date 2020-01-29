@@ -1,0 +1,22 @@
+.bg-1,
+.bg-2,
+.bg-3,
+.bg-4,
+.bg-5,
+.bg-6 {
+    background: linear-gradient(rgba(5, 5, 5, 0.6), rgba(0, 0, 0, 0)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url("https://m.media-amazon.com/images/I/21sTBN6+unL._SR500,500_.jpg");
+}  
+
+.container-fluid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.bg-black{
+    background-color: black !important;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+
+
